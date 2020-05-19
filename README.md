@@ -1,3 +1,3 @@
 First Step 
-Siple blog
+Simple blog
 Good Luck
