@@ -16,6 +16,16 @@
   "bugs": {
     "url": "https://github.com/alirezakariminejad/simpleblog/issues"
   },
+  "_moduleAliases": {
+    "@root": ".",
+    "@controllers": "app/controllers",
+    "@middlewares": "app/middlewares",
+    "@models": "app/models",
+    "@routes": "app/routes",
+    "@services": "app/services",
+    "@views": "app/views",
+    "@database": "database"
+  },
   "homepage": "https://github.com/alirezakariminejad/simpleblog#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -23,6 +33,8 @@
     "express": "^4.17.1",
     "express-handlebars": "^4.0.4",
     "express-session": "^1.17.1",
+    "jalali-moment": "^3.3.4",
+    "module-alias": "^2.2.2",
     "mysql2": "^2.1.0"
   },
   "devDependencies": {
