@@ -14,6 +14,10 @@ exports.findAll = async () => {
 
 exports.create = async (postData) => {
   const [result] = await db.query(`INSERT INTO posts SET ?`, [postData]);
-  console.log(result);
-  return result;
+  return result.insertId;
+};
+
+exports.delete = async (postID) => {
+  const [result] = await db.query(`DELETE FROM posts WHERE id = ?`, [postID]);
+  return result.affectedRows > 0;
 };
